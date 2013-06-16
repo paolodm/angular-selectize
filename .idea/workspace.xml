@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43a8cd3c-aac0-465e-932f-5e634049f47f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/angular-selectize.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/paolo_delmundo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-selectize.js" afterPath="$PROJECT_DIR$/angular-selectize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demo.html" afterPath="$PROJECT_DIR$/demo/demo.html" />
     </list>
     <ignored path="angular-selectize.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="43a8cd3c-aac0-465e-932f-5e634049f47f" time="1371349152676" ignored="false" />
     <file path="/demo.html" changelist="43a8cd3c-aac0-465e-932f-5e634049f47f" time="1371351545544" ignored="false" />
-    <file path="/angular-selectize.js" changelist="43a8cd3c-aac0-465e-932f-5e634049f47f" time="1371351439315" ignored="false" />
+    <file path="/angular-selectize.js" changelist="43a8cd3c-aac0-465e-932f-5e634049f47f" time="1371351947295" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,19 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="demo.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="demo.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="29" selection-start="1152" selection-end="1152" vertical-scroll-proportion="-18.75">
+            <state line="10" column="52" selection-start="601" selection-end="601" vertical-scroll-proportion="0.15756631">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular-selectize.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="angular-selectize.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-selectize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="27" selection-start="56" selection-end="56" vertical-scroll-proportion="0.04511278">
+            <state line="1" column="39" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,8 +65,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/angular-selectize.js" />
         <option value="$PROJECT_DIR$/demo/demo.html" />
+        <option value="$PROJECT_DIR$/angular-selectize.js" />
       </list>
     </option>
   </component>
@@ -256,16 +250,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo/demo.html">
+    <entry file="file://$PROJECT_DIR$/angular-selectize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="29" selection-start="1152" selection-end="1152" vertical-scroll-proportion="-18.75">
+        <state line="1" column="39" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-selectize.js">
+    <entry file="file://$PROJECT_DIR$/demo/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="56" selection-end="56" vertical-scroll-proportion="0.04511278">
+        <state line="10" column="52" selection-start="601" selection-end="601" vertical-scroll-proportion="0.15756631">
           <folding />
         </state>
       </provider>

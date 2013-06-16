@@ -1,17 +1,18 @@
-angular.module('demo', []);
+(function() {
+    angular.module('selectize.directive', []);
 
-console.log('inside file');
+    angular.module('selectize.directive').directive('selectize', function($timeout) {
+        return {
+            // Restrict it to be an attribute in this case
+            restrict: 'A',
+            // responsible for registering DOM listeners as well as updating the DOM
+            link: function(scope, element, attrs) {
+                $timeout(function() {
+                    $(element).selectize(scope.$eval(attrs.selectize));
+                });
+            }
+        };
+    });
 
-angular.module('demo').directive('selectize', function() {
-    console.log('inside dir');
+}).call(this);
 
-    return {
-        // Restrict it to be an attribute in this case
-        restrict: 'A',
-        // responsible for registering DOM listeners as well as updating the DOM
-        link: function(scope, element, attrs) {
-            console.log('inside link');
-            $(element).selectize(scope.$eval(attrs.selectize));
-        }
-    };
-});
