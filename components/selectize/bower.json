@@ -1,0 +1,38 @@
+{
+  "name": "selectize",
+  "keywords": [
+    "select",
+    "ui",
+    "form",
+    "input",
+    "control",
+    "autocomplete",
+    "tagging",
+    "tag"
+  ],
+  "description": "Selectize is a jQuery-based custom <select> UI control. Useful for tagging, contact lists, country selectors, etc.",
+  "version": "0.3.2",
+  "license": "Apache License, Version 2.0",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brianreavis/selectize.js.git"
+  },
+  "main": [
+    "selectize.css",
+    "selectize.js"
+  ],
+  "ignore": [
+    "makefile",
+    "examples",
+    "docs",
+    "src",
+    "*.sh"
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "gitHead": "2567c406dbbcd5ddf3c6ddfccd05a213a3b2d55e",
+  "readme": "# selectize.js\n\nSelectize is a jQuery-based custom &lt;select&gt; UI control. It's useful for tagging, contact lists, country selectors, and so on. It clocks in at around ~7kb (gzipped). The goal is to provide a solid & usable user-experience with a clean and powerful API.\n\n- [Demos](http://brianreavis.github.io/selectize.js/)\n- [Examples](examples/)\n- [Usage Documentation](docs/usage.md)\n- [API Documentation](docs/api.md)\n\n### Features\n\n- **Smart Option Ranking**<br>As the user types, options are efficiently scored and sorted on-the-fly.\n- **Multi-property searching**<br>Want to search an item's title *and* description? No problem.\n- **Caret between items**<br>Order matters sometimes. Use the [left] and [right] arrow keys to move between selected items.</li>\n- **Select &amp; delete multiple items at once**<br>Hold down [option] on Mac or [ctrl] on Windows to select more than one item to delete.\n- **Díåcritîçs supported**<br>Great for international environments.\n- **Item creation**<br>Allow users to create items on the fly (async saving is supported; the control locks until the callback is fired).\n- **Remote data loading**<br>For when you have thousands of options and want them provided by the server as the user types.\n- **Clean API &amp; code**<br>Interface with it and make modifications easily. Pull requests welcome!\n- **Touch Support**<br> Plays nice with iOS 5+ devices.\n\n### Usage\n\nIf using [Bower](http://bower.io/), run `bower install selectize`. Otherwise,\ngrab [\"selectize.min.js\"](selectize.min.js) (or [\"selectize.js\"](selectize.js)\nif in a development environment) and [\"selectize.css\"](selectize.css) and include them in your project.\n\n```js\n$('select').selectize(options);\n```\n\nThe available options are [documented here](docs/usage.md).\n\n#### IE8 Support\n\nTo support Internet Explorer 8, [es5-shim](https://github.com/kriskowal/es5-shim/) must be added your page.\n\n### Contributing\n\nTo test, build your copy with `make` then try out the [bundled examples](examples/).\n\nPlease exclude \"selectize.js\" and \"selectize.min.js\" in the project root when issuing a pull request.\n\n## License\n\nCopyright &copy; 2013 [Brian Reavis](http://twitter.com/brianreavis), & Contributors\n\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.",
+  "_id": "selectize@0.3.2"
+}

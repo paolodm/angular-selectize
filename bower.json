@@ -1,0 +1,9 @@
+{
+  "name": "angular-selectize",
+  "version": "0.0.0",
+  "devDependencies": {
+    "selectize": "~0.3.2",
+    "jquery": "~2.0.2",
+    "angular-latest": "~1.1.5"
+  }
+}
