@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Selectize Demo</title>
+    <script type="text/javascript" src="../components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../components/angular-latest/build/angular.min.js"></script>
+    <script type="text/javascript" src="../components/selectize/selectize.js"></script>
+    <script type="text/javascript" src="../angular-selectize.js"></script>
+    <link type="text/css" rel="stylesheet" href="../components/selectize/selectize.css" />
+    <script type="text/javascript">
+        angular.module('demo', []);
+
+        angular.module('demo')
+                .controller('demoCtrl', function($scope) {
+                    $scope.numbers = [{
+                        id: 1,
+                        name: "One"
+                    }, {
+                        id: 2,
+                        name: "Two"
+                    }, {
+                        id: 3,
+                        name: "Three"
+                    }];
+                });
+    </script>
+</head>
+<body ng-app="demo">
+
+    <select selectize="{ labelField: 'text', valueField: 'id' }">
+        <option value="1">One</option>
+    </select>
+
+    <div ng-controller="demoCtrl">
+        <select placeholder="Pick a number" ng-options='number.name for number in numbers' ng-model='selectedNumber'
+                selectize="{ labelField: 'text', valueField: 'id' }"></select>
+
+    </div>
+
+</body>
+</html>
