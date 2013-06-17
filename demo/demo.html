@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Angular Selectize Demo</title>
-    <script type="text/javascript" src="../components/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="../components/angular-latest/build/angular.min.js"></script>
-    <script type="text/javascript" src="../components/selectize/selectize.js"></script>
-    <script type="text/javascript" src="../angular-selectize.js"></script>
-    <link type="text/css" rel="stylesheet" href="../components/selectize/selectize.css" />
+    <script type="text/javascript" src="vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/selectize.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-selectize.js"></script>
+    <link type="text/css" rel="stylesheet" href="vendor/selectize.css" />
     <script type="text/javascript">
-        angular.module('demo', ['selectize.directive']);
+        angular.module('demo', ['angular-selectize']);
 
         angular.module('demo')
                 .controller('demoCtrl', function($scope) {
