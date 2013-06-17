@@ -1,7 +1,7 @@
 (function() {
-    angular.module('selectize.directive', []);
+    angular.module('angular-selectize', []);
 
-    angular.module('selectize.directive').directive('selectize', function($timeout) {
+    angular.module('angular-selectize').directive('selectize', function($timeout) {
         return {
             // Restrict it to be an attribute in this case
             restrict: 'A',
