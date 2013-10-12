@@ -1,7 +1,7 @@
 (function() {
   "use strict";
 
-  angular.module("theaquaNg").directive("selectize", function($timeout) {
+  angular.module("theaquaNg", ['ng']).directive("selectize", function($timeout) {
     return {
       restrict: "AE",
       link: function(scope, element, attrs) {
