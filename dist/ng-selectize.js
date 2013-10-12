@@ -6,7 +6,7 @@
       restrict: "AE",
       link: function(scope, element, attrs) {
         return $timeout(function() {
-          return element.selectize(scope.$eval(attrs.selectize));
+          return $(element).selectize(scope.$eval(attrs.selectize));
         });
       }
     };

@@ -5,4 +5,4 @@ angular.module("theaquaNg", ['ng'])
     restrict: "AE"
     link: (scope, element, attrs) ->
       $timeout ->
-        element.selectize scope.$eval(attrs.selectize)
+        $(element).selectize scope.$eval(attrs.selectize)
