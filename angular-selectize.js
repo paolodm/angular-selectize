@@ -1,15 +1,47 @@
 (function() {
     angular.module('angular-selectize', []);
 
-    angular.module('angular-selectize').directive('selectize', function($timeout) {
+    angular.module('angular-selectize').directive('selectize', function() {
+        'use strict';
         return {
-            // Restrict it to be an attribute in this case
             restrict: 'A',
-            // responsible for registering DOM listeners as well as updating the DOM
             link: function(scope, element, attrs) {
-                $timeout(function() {
-                    $(element).selectize(scope.$eval(attrs.selectize));
+                var selectize;
+                scope.$watch(attrs.selectize, function(config) {
+                    init(config);
                 });
+    
+                if (attrs.ngModel) {
+                    scope.$watch(attrs.ngModel, function() {
+                        var val = element.val();
+                        if (selectize && val !== selectize.getValue()) {
+                            if (!val.length) {
+                                selectize.clear();
+                            } else {
+                                init(scope.$eval(attrs.selectize));
+                            }
+                        }
+                    });
+                }
+    
+                scope.$on('$destroy', function() {
+                    cleanup();
+                });
+    
+                function init (config) {
+                    cleanup();
+                    element.selectize(config);
+                    selectize = element[0].selectize;
+                }
+    
+                function cleanup() {
+                    if (selectize) {
+                        if (angular.isFunction(selectize.destroy)) {
+                            selectize.destroy();
+                        }
+                        selectize = null;
+                    }
+                }
             }
         };
     });
